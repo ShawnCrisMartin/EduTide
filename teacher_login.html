@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Login - Edutide</title>
+    <link rel="stylesheet" href="styles.css">
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: #333;
+        }
+
+        .login-form {
+            background-color: #fff;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .login-form input, .login-form select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 14px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #555;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Edutide</h1>
+</header>
+
+<div class="login-form">
+    <h2>Teacher Login</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="date" placeholder="Date of Birth" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Subjects You Teach" required>
+        <select required>
+            <option value="">English Proficiency</option>
+            <option>Basic</option>
+            <option>Intermediate</option>
+            <option>Fluent</option>
+            <option>Native</option>
+        </select>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <a href="login.html" class="back-btn">← Back to Login Options</a>
+</div>
+
+</body>
+</html>
